@@ -5,24 +5,29 @@ from accounts import abstract_models
 
 if not is_model_registered('accounts', 'AccountType'):
     class AccountType(abstract_models.AccountType):
-        pass
+        class Meta:
+            app_label = "accounts"
 
 
 if not is_model_registered('accounts', 'Account'):
     class Account(abstract_models.Account):
-        pass
+        class Meta:
+            app_label = "accounts"
 
 
 if not is_model_registered('accounts', 'Transfer'):
     class Transfer(abstract_models.Transfer):
-        pass
+        class Meta:
+            app_label = "accounts"
 
 
 if not is_model_registered('accounts', 'Transaction'):
     class Transaction(abstract_models.Transaction):
-        pass
+        class Meta:
+            app_label = "accounts"
 
 
 if not is_model_registered('accounts', 'IPAddressRecord'):
     class IPAddressRecord(abstract_models.IPAddressRecord):
-        pass
+        class Meta:
+            app_label = "accounts"
