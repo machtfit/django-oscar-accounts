@@ -23,4 +23,5 @@ setup(name='django-oscar-accounts',
           'Operating System :: Unix',
           'Programming Language :: Python'],
       install_requires=['django-oscar>=1.0',
+                        'Django>=1.8',
                         'python-dateutil>=2.4,<2.5'])
